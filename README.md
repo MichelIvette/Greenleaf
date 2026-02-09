@@ -22,14 +22,17 @@
 
 ## Pantallas de la app
 ### Inicio
-<a href="https://github.com/MichelIvette/Greenleaf/blob/main/Images/Inicio.PNG"><img src="https://github.com/MichelIvette/Greenleaf/blob/main/Images/Inicio.PNG" width="300"></a> 
+
+<a href="https://github.com/MichelIvette/Greenleaf/blob/main/Images/Inicio.PNG"><img src="https://github.com/MichelIvette/Greenleaf/blob/main/Images/Inicio.PNG" width="400"></a> 
 <a href="https://github.com/MichelIvette/Greenleaf/blob/main/Images/Permisos.PNG"><img src="https://github.com/MichelIvette/Greenleaf/blob/main/Images/Permisos.PNG" width="300"></a> 
 
 ### Perfil del cliente
+
 <a href="https://github.com/MichelIvette/Greenleaf/blob/main/Images/Usuario.PNG"><img src="https://github.com/MichelIvette/Greenleaf/blob/main/Images/Usuario.PNG" width="300"></a> 
 <a href="https://github.com/MichelIvette/Greenleaf/blob/main/Images/Usuario1.PNG"><img src="¿https://github.com/MichelIvette/Greenleaf/blob/main/Images/Usuario1.PNG" width="300"></a> 
 
 ### Perfil del administrador
+
 <a href="https://github.com/MichelIvette/Greenleaf/blob/main/Images/Admin.PNG"><img src="¿https://github.com/MichelIvette/Greenleaf/blob/main/Images/Admin.PNG" width="300"></a> 
 
 
