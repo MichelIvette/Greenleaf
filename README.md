@@ -30,7 +30,7 @@
 ### Perfil del cliente
 
 <img width="400"  alt="image" src="https://github.com/user-attachments/assets/801311fd-c681-4c26-83b7-5d34a0131496" />
-<img width="200"  alt="image" src="https://github.com/user-attachments/assets/9cffd4c1-b282-44b2-9693-40b63886d4f1" />
+<img width="280"  alt="image" src="https://github.com/user-attachments/assets/9cffd4c1-b282-44b2-9693-40b63886d4f1" />
 
 
 ### Perfil del administrador
@@ -53,9 +53,9 @@ Sin embargo, la aplicación **puede ejecutarse y visualizarse correctamente**, p
 Ingresa a la app con las siguientes cuentas:
 
 - **Administrador**
-User: nose123@gmail.com  pass: nose12345678#
+-> User: nose123@gmail.com  pass: nose12345678#
 - **Cliente**
-User: michel.ivette.rs@gmail.com pass: Michel
+-> User: michel.ivette.rs@gmail.com pass: Michel
 
 
 ## Documentación adicional y manuales
