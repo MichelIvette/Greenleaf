@@ -23,50 +23,20 @@
 ## Pantallas de la app
 ### Inicio
 
-<img width="400"  alt="image" src="https://github.com/user-attachments/assets/43344264-eb97-416a-9623-62ecee914f4a" />
-<img width="200"  alt="image" src="https://github.com/user-attachments/assets/e9bbe790-9351-4a51-9409-ad3f8d1ce40c" />
+<img width="500"  alt="image" src="https://github.com/user-attachments/assets/43344264-eb97-416a-9623-62ecee914f4a" />
+<img width="300"  alt="image" src="https://github.com/user-attachments/assets/e9bbe790-9351-4a51-9409-ad3f8d1ce40c" />
 
 
 ### Perfil del cliente
 
-<img width="400"  alt="image" src="https://github.com/user-attachments/assets/801311fd-c681-4c26-83b7-5d34a0131496" />
-<img width="280"  alt="image" src="https://github.com/user-attachments/assets/9cffd4c1-b282-44b2-9693-40b63886d4f1" />
+<img width="500"  alt="image" src="https://github.com/user-attachments/assets/801311fd-c681-4c26-83b7-5d34a0131496" />
+<img width="380"  alt="image" src="https://github.com/user-attachments/assets/9cffd4c1-b282-44b2-9693-40b63886d4f1" />
 
 
 ### Perfil del administrador
 
-<img width="400"  alt="image" src="https://github.com/user-attachments/assets/0df4f80f-36af-43ce-8ee7-a6cf71d2cfba" />
+<img width="500"  alt="image" src="https://github.com/user-attachments/assets/0df4f80f-36af-43ce-8ee7-a6cf71d2cfba" />
 
-
-## 📱 Pantallas de la app
-
-### 🏠 Inicio
-
-<img width="220" alt="Pantalla de inicio" src="https://github.com/user-attachments/assets/e9bbe790-9351-4a51-9409-ad3f8d1ce40c" />
-
-<br><br>
-
-<img width="700" alt="Pantalla de inicio ampliada" src="https://github.com/user-attachments/assets/43344264-eb97-416a-9623-62ecee914f4a" />
-
----
-
-### 👤 Perfil del cliente
-
-<img width="220" alt="Perfil del cliente" src="https://github.com/user-attachments/assets/9cffd4c1-b282-44b2-9693-40b63886d4f1" />
-
-<br><br>
-
-<img width="700" alt="Perfil del cliente ampliado" src="https://github.com/user-attachments/assets/801311fd-c681-4c26-83b7-5d34a0131496" />
-
----
-
-### 🛠️ Perfil del administrador
-
-<img width="220" alt="Perfil del administrador" src="https://github.com/user-attachments/assets/0df4f80f-36af-43ce-8ee7-a6cf71d2cfba" />
-
-<br><br>
-
-<img width="700" alt="Perfil del administrador ampliada" src="https://github.com/user-attachments/assets/0df4f80f-36af-43ce-8ee7-a6cf71d2cfba" />
 
 
 ## Estado actual del proyecto
