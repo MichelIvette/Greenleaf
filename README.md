@@ -23,18 +23,19 @@
 ## Pantallas de la app
 ### Inicio
 
-<a href="https://github.com/MichelIvette/Greenleaf/blob/main/Images/Inicio.PNG"><img src="https://github.com/MichelIvette/Greenleaf/blob/main/Images/Inicio.PNG" width="400"></a> 
-<a href="https://github.com/MichelIvette/Greenleaf/blob/main/Images/Permisos.PNG"><img src="https://github.com/MichelIvette/Greenleaf/blob/main/Images/Permisos.PNG" width="300"></a> 
+<img width="400"  alt="image" src="https://github.com/user-attachments/assets/43344264-eb97-416a-9623-62ecee914f4a" />
+<img width="200"  alt="image" src="https://github.com/user-attachments/assets/e9bbe790-9351-4a51-9409-ad3f8d1ce40c" />
+
 
 ### Perfil del cliente
 
-<a href="https://github.com/MichelIvette/Greenleaf/blob/main/Images/Usuario.PNG"><img src="https://github.com/MichelIvette/Greenleaf/blob/main/Images/Usuario.PNG" width="300"></a> 
-<a href="https://github.com/MichelIvette/Greenleaf/blob/main/Images/Usuario1.PNG"><img src="¿https://github.com/MichelIvette/Greenleaf/blob/main/Images/Usuario1.PNG" width="300"></a> 
+<img width="300"  alt="image" src="https://github.com/user-attachments/assets/801311fd-c681-4c26-83b7-5d34a0131496" />
+<img width="300"  alt="image" src="https://github.com/user-attachments/assets/9cffd4c1-b282-44b2-9693-40b63886d4f1" />
+
 
 ### Perfil del administrador
 
-
-<img width="1280" height="720" alt="image" src="https://github.com/user-attachments/assets/0df4f80f-36af-43ce-8ee7-a6cf71d2cfba" />
+<img width="300"  alt="image" src="https://github.com/user-attachments/assets/0df4f80f-36af-43ce-8ee7-a6cf71d2cfba" />
 
 
 
