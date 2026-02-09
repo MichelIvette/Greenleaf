@@ -29,13 +29,13 @@
 
 ### Perfil del cliente
 
-<img width="300"  alt="image" src="https://github.com/user-attachments/assets/801311fd-c681-4c26-83b7-5d34a0131496" />
+<img width="400"  alt="image" src="https://github.com/user-attachments/assets/801311fd-c681-4c26-83b7-5d34a0131496" />
 <img width="300"  alt="image" src="https://github.com/user-attachments/assets/9cffd4c1-b282-44b2-9693-40b63886d4f1" />
 
 
 ### Perfil del administrador
 
-<img width="300"  alt="image" src="https://github.com/user-attachments/assets/0df4f80f-36af-43ce-8ee7-a6cf71d2cfba" />
+<img width="400"  alt="image" src="https://github.com/user-attachments/assets/0df4f80f-36af-43ce-8ee7-a6cf71d2cfba" />
 
 
 
