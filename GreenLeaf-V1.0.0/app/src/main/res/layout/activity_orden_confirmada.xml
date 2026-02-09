@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+>
+
+        <TextView
+            android:id="@+id/tvTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¡SU ORDEN HA SIDO ENVIADA!"
+            android:layout_marginTop="40dp"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="Recoger en tienda"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
+
+        <ImageView
+            android:id="@+id/imgUbicacion"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_ubicacion"
+            android:contentDescription="Ubicación" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Eje 6 Ote 193, Agrícola Pantitlán, Iztacalco, 08100\nCiudad de México, CDMX"
+            android:textAlignment="center"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/linkMapa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="https://maps.app.goo.gl/DVzgU8tdUb5UFSoXA"
+            android:textColorLink="@color/verde_principal"
+            android:autoLink="web"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:textSize="11dp"
+            android:textAlignment="center"/>
+
+        <Button
+            android:id="@+id/btnRegresarCatalogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Regresar al catalogo"
+            android:backgroundTint="@color/verde_principal"
+            android:layout_marginTop="70dp" />
+
+    </LinearLayout>
+</ScrollView>

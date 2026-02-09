@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grayBackground"
+    android:adjustViewBounds="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/ivPlantaP"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:scaleType="centerCrop"
+            android:foregroundGravity="center"/>
+
+
+        <TextView
+            android:id="@+id/tvNombreP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Planta"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/tvDescripcionP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:justificationMode="inter_word"
+            android:text="Descripción de la planta..."
+            android:textSize="25sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/tvStockP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:justificationMode="inter_word"
+            android:text="Cantidad disponible: "
+            android:textSize="15sp"
+            android:textColor="@color/grayText"/>
+
+        <Button
+            android:id="@+id/btnAddCart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Añadir al carrito"
+            android:layout_marginTop="8dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv1"
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:layout_marginTop="36dp"
+            app:cardCornerRadius="25dp"
+            app:cardBackgroundColor="@color/white">
+            <TextView
+                android:textColor="@color/black"
+                android:id="@+id/tvA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Descripcion"
+                android:textSize="20sp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="50dp"
+                />
+            <ImageView
+                android:id="@+id/iconA"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:foregroundGravity="center"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="300dp"
+
+                android:scaleType="centerCrop"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv2"
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:layout_marginTop="25dp"
+            app:cardCornerRadius="25dp"
+            app:cardBackgroundColor="@color/white">
+
+            <TextView
+                android:id="@+id/tvB"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Descripcion"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="50dp"
+                />
+            <ImageView
+                android:id="@+id/iconB"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:foregroundGravity="center"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="300dp"
+                android:scaleType="centerCrop"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv3"
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:layout_marginTop="25dp"
+            app:cardCornerRadius="25dp"
+            app:cardBackgroundColor="@color/white">
+
+            <TextView
+                android:id="@+id/tvC"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Descripcion"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="50dp"
+                />
+            <ImageView
+                android:id="@+id/iconC"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:foregroundGravity="center"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="300dp"
+                android:scaleType="centerCrop"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="84dp"
+            android:layout_marginTop="25dp"
+            app:cardCornerRadius="10dp"
+            app:cardBackgroundColor="@color/purple">
+
+            <ImageView
+                android:id="@+id/iconIdea"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:foregroundGravity="center"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="38dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/icon_idea"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="¡Consejo!"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvConsejo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="110dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/white"
+                android:justificationMode="inter_word"
+                android:textStyle="italic"
+                android:text="Lorem Ipsum is simply dummy "/>
+        </androidx.cardview.widget.CardView>
+
+
+
+    </LinearLayout>
+</ScrollView>

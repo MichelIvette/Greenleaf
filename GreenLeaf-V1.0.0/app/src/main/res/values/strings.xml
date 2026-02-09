@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">GreenLeaf_V1.0.0</string>
+    <string name="profile_image">Imagen de perfil</string>
+    <string name="change_photo">Cambiar foto</string>
+
+    <string name="hola_usuario">Hola %1$s!</string>
+    <string name="correo_label">Correo:</string>
+    <string name="password_label">Contraseña:</string>
+    <string name="cambiar">Cambiar</string>
+    <string name="logout">Cerrar sesión</string>
+    <string name="role_label">Tipo de usuario:</string>
+    <string name="show_hide_password">Mostrar/ocultar contraseña</string>
+
+    <!-- Mensajes de error básicos -->
+    <string name="error_invalid_email">Correo inválido</string>
+    <string name="error_invalid_password">Contraseña inválida</string>
+    <string name="photo_pick_error">No se pudo seleccionar la foto</string>
+
+    <!-- Diálogos de actualización -->
+    <string name="change_email_title">Actualizar correo</string>
+    <string name="change_password_title">Actualizar contraseña</string>
+    <string name="enter_new_email">Ingresa tu nuevo correo</string>
+    <string name="enter_new_password">Contraseña nueva</string>
+    <string name="cancel">Cancelar</string>
+    <string name="update">Actualizar</string>
+    <string name="enter_current_password">Contraseña actual</string>
+
+
+</resources>

@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <!-- Contenido desplazable -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="24dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/barraAdmin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="500dp">
+
+            <!-- Foto de perfil -->
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/ivProfile"
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:src="@drawable/usuario_foto"
+                android:contentDescription="@string/profile_image"
+                app:shapeAppearanceOverlay="@style/ShapeAppearance.Circle"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="16dp"
+                tools:ignore="ImageContrastCheck"/>
+
+            <!-- FAB para editar foto -->
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/fabEditPhoto"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_margin="4dp"
+                android:backgroundTint="@android:color/transparent"
+                android:src="@drawable/boton_add_24"
+                android:padding="0dp"
+                app:useCompatPadding="false"
+                app:layout_constraintBottom_toBottomOf="@id/ivProfile"
+                app:layout_constraintEnd_toEndOf="@id/ivProfile"
+                tools:ignore="TouchTargetSizeCheck"
+                android:contentDescription="@string/change_photo"/>
+
+            <!-- Saludo -->
+            <TextView
+                android:id="@+id/tvGreeting"
+                style="?attr/textAppearanceTitleMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bienvenido NombreUsuario!"
+                app:layout_constraintTop_toBottomOf="@id/ivProfile"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/black"/>
+
+            <View
+                android:id="@+id/dividerEmail"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:background="?attr/colorOutline"
+                app:layout_constraintTop_toBottomOf="@id/tvGreeting"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="24dp"/>
+
+            <TextView
+                android:id="@+id/labelEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Correo: "
+                android:textAppearance="?attr/textAppearanceBodyMedium"
+                app:layout_constraintTop_toBottomOf="@id/dividerEmail"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="12dp"/>
+
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="user@dominio.com"
+                android:autoLink="email"
+                android:textColor="?attr/colorPrimary"
+                app:layout_constraintTop_toBottomOf="@id/labelEmail"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/btnEditEmail"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="12dp"
+                android:textColorLink="@color/verde_principal"/>
+
+            <TextView
+                android:id="@+id/btnEditEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="7dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="sans-serif-medium"
+                android:minHeight="48dp"
+                android:text="Cambiar"
+                android:textColor="@color/verde_principal"
+                app:layout_constraintBaseline_toBaselineOf="@id/labelEmail"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/dividerEmail"
+                app:layout_constraintTop_toTopOf="@id/tvEmail" />
+
+            <View
+                android:id="@+id/dividerPassword"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:background="?attr/colorOutline"
+                app:layout_constraintTop_toBottomOf="@id/tvEmail"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="16dp"/>
+
+            <TextView
+                android:id="@+id/labelPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contraseña"
+                android:textAppearance="?attr/textAppearanceBodyMedium"
+                app:layout_constraintTop_toBottomOf="@id/dividerPassword"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="12dp"/>
+
+            <TextView
+                android:id="@+id/tvPassword"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="********"
+                android:fontFamily="monospace"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/labelPassword"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="12dp"/>
+
+            <TextView
+                android:id="@+id/btnEditPwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="sans-serif-medium"
+                android:minHeight="48dp"
+                android:layout_marginRight="7dp"
+                android:text="Cambiar"
+                android:textColor="@color/verde_principal"
+                app:layout_constraintBaseline_toBaselineOf="@id/labelPassword"
+                app:layout_constraintBottom_toTopOf="@id/tvPassword"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <View
+                android:id="@+id/dividerRole"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:background="?attr/colorOutline"
+                app:layout_constraintTop_toBottomOf="@id/tvPassword"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="16dp"/>
+
+            <TextView
+                android:id="@+id/labelRole"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tipo de Usuario: "
+                android:textAppearance="?attr/textAppearanceBodyMedium"
+                app:layout_constraintTop_toBottomOf="@id/dividerRole"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="12dp"/>
+
+            <TextView
+                android:id="@+id/tvRole"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Cliente"
+                app:layout_constraintTop_toBottomOf="@id/labelRole"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="12dp"/>
+
+            <View
+                android:id="@+id/dividerRoleFields"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:background="?attr/colorOutline"
+                app:layout_constraintTop_toBottomOf="@id/tvRole"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <!-- 2) Nombre -->
+            <TextView
+                android:id="@+id/labelFirstName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Nombre"
+                app:layout_constraintTop_toBottomOf="@id/dividerRoleFields"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:id="@+id/tvFirstName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="–"
+                app:layout_constraintTop_toBottomOf="@id/labelFirstName"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/btnEditFirstName"/>
+
+            <TextView
+                android:id="@+id/btnEditFirstName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cambiar"
+                android:textColor="@color/verde_principal"
+                app:layout_constraintBaseline_toBaselineOf="@id/labelFirstName"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <!-- 3) Apellido paterno -->
+            <View
+                android:id="@+id/dividerLastNamePat"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:background="?attr/colorOutline"
+                app:layout_constraintTop_toBottomOf="@id/tvFirstName"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                android:id="@+id/labelLastNamePat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Apellido paterno"
+                app:layout_constraintTop_toBottomOf="@id/dividerLastNamePat"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:id="@+id/tvLastNamePat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="–"
+                app:layout_constraintTop_toBottomOf="@id/labelLastNamePat"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/btnEditLastNamePat"/>
+
+            <TextView
+                android:id="@+id/btnEditLastNamePat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cambiar"
+                android:textColor="@color/verde_principal"
+                app:layout_constraintBaseline_toBaselineOf="@id/labelLastNamePat"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <!-- 4) Apellido materno -->
+            <View
+                android:id="@+id/dividerLastNameMat"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:background="?attr/colorOutline"
+                app:layout_constraintTop_toBottomOf="@id/tvLastNamePat"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                android:id="@+id/labelLastNameMat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Apellido materno"
+                app:layout_constraintTop_toBottomOf="@id/dividerLastNameMat"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:id="@+id/tvLastNameMat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="–"
+                app:layout_constraintTop_toBottomOf="@id/labelLastNameMat"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/btnEditLastNameMat"/>
+
+            <TextView
+                android:id="@+id/btnEditLastNameMat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cambiar"
+                android:textColor="@color/verde_principal"
+                app:layout_constraintBaseline_toBaselineOf="@id/labelLastNameMat"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <!-- 5) Fecha de nacimiento -->
+            <View
+                android:id="@+id/dividerFechaNacimiento"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:background="?attr/colorOutline"
+                app:layout_constraintTop_toBottomOf="@id/tvLastNameMat"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                android:id="@+id/labelFechaNacimiento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Fecha de nacimiento"
+                app:layout_constraintTop_toBottomOf="@id/dividerFechaNacimiento"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:id="@+id/tvFechaNacimiento"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="–"
+                app:layout_constraintTop_toBottomOf="@id/labelFechaNacimiento"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/btnEditFechaNacimiento"/>
+
+            <TextView
+                android:id="@+id/btnEditFechaNacimiento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cambiar"
+                android:textColor="@color/verde_principal"
+                app:layout_constraintBaseline_toBaselineOf="@id/labelFechaNacimiento"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <!-- 6) Domicilio fiscal -->
+            <View
+                android:id="@+id/dividerDomicilioFiscal"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:background="?attr/colorOutline"
+                app:layout_constraintTop_toBottomOf="@id/tvFechaNacimiento"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                android:id="@+id/labelDomicilioFiscal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Domicilio fiscal"
+                app:layout_constraintTop_toBottomOf="@id/dividerDomicilioFiscal"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:id="@+id/tvDomicilioFiscal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="–"
+                app:layout_constraintTop_toBottomOf="@id/labelDomicilioFiscal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/btnEditDomicilioFiscal"/>
+
+            <TextView
+                android:id="@+id/btnEditDomicilioFiscal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cambiar"
+                android:textColor="@color/verde_principal"
+                app:layout_constraintBaseline_toBaselineOf="@id/labelDomicilioFiscal"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <!-- === Finalmente tu dividerCerrar === -->
+
+            <View
+                android:id="@+id/dividerCerrar"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:background="?attr/colorOutline"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintTop_toBottomOf="@id/tvDomicilioFiscal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="14dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnLogout"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@color/verde_principal"
+                android:text="Cerrar sesión"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/dividerCerrar" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnDeleteAccount"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Eliminar registro"
+                android:textColor="@color/design_default_color_error"
+                app:layout_constraintTop_toBottomOf="@id/btnLogout"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="50dp"/>
+
+            <!-- Registrar Administrador -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnRegisterAdmin"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Añadir Administrador"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.49"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btnDeleteAccount" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- Barra de navegación inferior -->
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/barraCliente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:itemIconTint="@color/greenA"
+        app:itemRippleColor="@color/greenA"
+        app:itemTextColor="@color/grayText"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/menu_cliente"
+        tools:layout_editor_absoluteX="-4dp"
+        android:visibility="invisible"
+        android:background="@color/white"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/barraAdmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:itemIconTint="@color/greenA"
+        app:itemRippleColor="@color/greenA"
+        app:itemTextColor="@color/grayText"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:menu="@menu/menu_admin"
+        android:visibility="invisible"
+        android:background="@color/white"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

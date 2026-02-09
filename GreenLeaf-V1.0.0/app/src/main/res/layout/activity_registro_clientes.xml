@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <data>
+        <!-- Puedes enlazar tu ViewModel aquí si utilizas DataBinding -->
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvCrearCuenta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Crear cuenta de cliente"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                android:layout_gravity="center_horizontal"
+                android:paddingBottom="24dp"
+                android:textColor="@color/black"/>
+
+            <!-- Nombre -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilFirstName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="@color/verde_principal"
+                app:hintTextColor="@color/verde_principal"
+                android:hint="Nombre"
+                app:errorEnabled="true"
+                android:paddingBottom="8dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etFirstName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/verde_principal"
+                    android:textColorHint="@color/verde_principal"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Apellido paterno -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilLastNamePat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Apellido paterno"
+                app:boxStrokeColor="@color/verde_principal"
+                app:hintTextColor="@color/verde_principal"
+                android:layout_marginTop="8dp"
+                app:errorEnabled="true"
+                android:paddingBottom="8dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etLastNamePat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/verde_principal"
+                    android:textColorHint="@color/verde_principal"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Apellido materno -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilLastNameMat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Apellido materno"
+                app:boxStrokeColor="@color/verde_principal"
+                app:hintTextColor="@color/verde_principal"
+                android:layout_marginTop="8dp"
+                app:errorEnabled="true"
+                android:paddingBottom="8dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etLastNameMat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/verde_principal"
+                    android:textColorHint="@color/verde_principal"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Correo electrónico -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilEmailReg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Correo electrónico"
+                app:boxStrokeColor="@color/verde_principal"
+                app:hintTextColor="@color/verde_principal"
+                android:layout_marginTop="16dp"
+                app:errorEnabled="true"
+                android:paddingBottom="8dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etEmailReg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/verde_principal"
+                    android:textColorHint="@color/verde_principal"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Contraseña -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Contraseña"
+                android:layout_marginTop="8dp"
+                app:boxStrokeColor="@color/verde_principal"
+                app:hintTextColor="@color/verde_principal"
+                app:errorEnabled="true"
+                app:endIconMode="password_toggle"
+                app:errorIconDrawable="@null"
+                android:paddingBottom="16dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:textColor="@color/verde_principal"
+                    android:textColorHint="@color/verde_principal"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Confirmar contraseña -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilConfirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Confirmar contraseña"
+                android:layout_marginTop="8dp"
+                app:errorEnabled="true"
+                app:boxStrokeColor="@color/verde_principal"
+                app:hintTextColor="@color/verde_principal"
+                app:endIconMode="password_toggle"
+                app:errorIconDrawable="@null"
+                android:paddingBottom="16dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etConfirmPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:textColor="@color/verde_principal"
+                    android:textColorHint="@color/verde_principal"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <!-- Fecha de nacimiento -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilFechaNacimiento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="@color/verde_principal"
+                app:hintTextColor="@color/verde_principal"
+                android:hint="Fecha de nacimiento"
+                app:errorEnabled="true"
+                android:layout_marginTop="16dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etFechaNacimiento"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:clickable="true"
+                    android:textColor="@color/verde_principal"
+                    android:textColorHint="@color/verde_principal"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Domicilio fiscal -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilDomicilioFiscal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="@color/verde_principal"
+                app:hintTextColor="@color/verde_principal"
+                android:hint="Domicilio fiscal"
+                app:errorEnabled="true"
+                android:layout_marginTop="8dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etDomicilioFiscal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPostalAddress"
+                    android:textColor="@color/verde_principal"
+                    android:textColorHint="@color/verde_principal"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Foto & vista previa -->
+            <Button
+                android:id="@+id/btnTakePhoto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="@color/verde_principal"
+                app:hintTextColor="@color/verde_principal"
+                android:text="Tomar fotografía"
+                android:backgroundTint="@color/verde_principal"
+                android:layout_marginTop="16dp"/>
+
+            <ImageView
+                android:id="@+id/ivPhotoPreview"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:scaleType="centerCrop"
+                android:visibility="gone"
+                android:background="@android:color/darker_gray"/>
+
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Registrar"
+                android:layout_marginTop="24dp"
+                android:backgroundTint="@color/verde_principal"/>
+
+            <TextView
+                android:id="@+id/tvBackToLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¿Ya tienes cuenta? Inicia sesión"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</layout>

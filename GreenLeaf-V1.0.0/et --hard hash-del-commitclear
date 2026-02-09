@@ -1,0 +1,53 @@
+[33m8e61857[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m Merge remote changes into master
+[33m96b1594[m se arregló el problema de la BD
+[33m1f34c1f[m ajuste de boton agregar
+[33mac892d2[m diseño de interfaces y funcionalidad de perfil de usuario
+[33mdf4727a[m correcion
+[33mabcaf06[m Se modificó el eliminar de admin y el favorito de cliente
+[33medbc563[m El administrador ya puede borrar una planta
+[33mcffa168[m Merge pull request #11 from AxellSC/feature/Portadas
+[33m78ea229[m[33m ([m[1;31morigin/feature/Portadas[m[33m, [m[1;32mfeature/Portadas[m[33m)[m Se agregó la portada de plantas destacables
+[33m6e10ec8[m Se mejoró el spinner
+[33madad25f[m Se agregó una barra de navegacion para el Administrador y se agregó la pantalla de ventas
+[33m883eee1[m Añadir la interfaz de favoritos al manifest
+[33m0510a2e[m se agregaron los iconos de favorito
+[33m9064f85[m Se agregó el icono de Favoritos a la barra
+[33m7f04739[m Merge pull request #10 from AxellSC/feature/carrito-y-favoritos
+[33mfecc958[m interfaz de favoritos y check box
+[33m63de7e6[m Se agregó el campo Stock, para planta
+[33mf525e78[m correcion
+[33mdfde0a3[m Se mejoró el formulario y se agregaron nuevos botones
+[33m10deedf[m se mejoró el catalogo
+[33md6ff0f7[m Merge pull request #9 from AxellSC/feature/barra
+[33mb82c9cf[m[33m ([m[1;31morigin/feature/barra[m[33m, [m[1;32mfeature/barra[m[33m)[m Se agregó una barra de menu
+[33m8ab53e5[m se obtuvo la referencia para saber si es Cliente o Usuario
+[33mbdad2c2[m Se cambió el color del form y se redirigió al tipo de usuario admin
+[33m9ff8895[m se modificó el formulario de planta
+[33m051c237[m Se mejoró la UI de la presentacion planta
+[33ma18dbfd[m Merge pull request #8 from AxellSC/feature/continuacion-logins-2
+[33ma3fca88[m añadí la variable para identificar el usuario
+[33m6b19e2e[m Se terminó la presentacion individual de la planta
+[33m0650dae[m Merge pull request #7 from AxellSC/feature/OnlyViewPlant
+[33m685db7b[m[33m ([m[1;31morigin/feature/OnlyViewPlant[m[33m, [m[1;32mfeature/OnlyViewPlant[m[33m)[m Se creó la plantilla para la presentacion de la planta individual
+[33m35b8bc7[m Merge pull request #6 from AxellSC/feature/continuacion-logins-2
+[33m4f98e3c[m Login y registros con errores de captura
+[33mbac1ca1[m Merge pull request #5 from AxellSC/feature/continuacion-logins
+[33m2717836[m Creacion del registro de cliente y admin
+[33m1caac5e[m Futura presentacion
+[33md62dd28[m Se mejoro el form de plantas
+[33m308e3f6[m Merge pull request #4 from AxellSC/feature/AddConsejo
+[33m438ee6b[m Finalizando merge entre ramas
+[33m67bd703[m Se cambio la apariencia del formulario de Planta
+[33mbda2882[m Merge pull request #3 from AxellSC/feature/AddConsejo
+[33me9cfff8[m Se agregó el consejo al modelo de planta y a la BD2
+[33m6beb3b9[m El catalago ya se actualiza con los datos agregados en el formulario
+[33m6f98c1d[m Merge origin/master into master
+[33m23f3949[m "Merge feature/RecyclerView into mainMerge branch 'feature/RecyclerView'
+[33mc8ac11d[m Merge pull request #2 from AxellSC/feature/RecyclerView
+[33m22db7dd[m[33m ([m[1;31morigin/feature/RecyclerView[m[33m)[m Merge branch 'master' into feature/RecyclerView
+[33m529a797[m Login y registro agregados
+[33meb2b674[m Merge pull request #1 from AxellSC/feature/RecyclerView
+[33m27c9741[m Guardar datos de planta en FirStore
+[33mf2a99c6[m Iconos
+[33m5f646dc[m Se ha agregado la conexion a la BD FireBase
+[33m28b6279[m Primer commit: subiendo mi proyecto

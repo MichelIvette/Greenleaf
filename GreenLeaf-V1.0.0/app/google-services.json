@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "187342559259",
+    "project_id": "greenleaf-d2f4a",
+    "storage_bucket": "greenleaf-d2f4a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:187342559259:android:f7117b0d49e6f69ab500be",
+        "android_client_info": {
+          "package_name": "com.example.greenleaf_v100"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDVy5UR4QyXwfzeJKS32z9DI4CuQBzPIE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
