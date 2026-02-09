@@ -33,7 +33,9 @@
 
 ### Perfil del administrador
 
-<a href="https://github.com/MichelIvette/Greenleaf/blob/main/Images/Admin.PNG"><img src="¿https://github.com/MichelIvette/Greenleaf/blob/main/Images/Admin.PNG" width="300"></a> 
+
+<img width="1280" height="720" alt="image" src="https://github.com/user-attachments/assets/0df4f80f-36af-43ce-8ee7-a6cf71d2cfba" />
+
 
 
 ## Estado actual del proyecto
